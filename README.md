@@ -17,6 +17,15 @@ This project is perfect for beginners and intermediate developers aiming to stre
 
 ---
 
+## 📸 Screenshot
+
+| Page one | page two |
+|-----------|------------------|
+| ![Home](./screenshot-1.png) | ![Projects](./screenshot-2.png) |
+
+
+---
+
 ## ✨ Features
 
 - ✅ Hands-on practice with modern **JavaScript (ES6+)**
