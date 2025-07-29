@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ES6 Tasks</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+  </head>
+  <body>
+    <h1 class="title">
+      <i class="fa-brands fa-stack-overflow"></i>ES6 Tasks Demo
+    </h1>
+    <!-- Sum With Alert -->
+    <div class="section">
+      <h2><i class="fa-solid fa-circle-nodes"></i>Summing with Alert</h2>
+      <div class="box">
+        <input id="num1" type="number" placeholder="Number 1" />
+      </div>
+      <div class="box">
+        <input id="num2" type="number" placeholder="Number 2" />
+      </div>
+      <button id="sum">Sum</button>
+    </div>
+
+    <div class="section">
+      <h2><i class="fa-solid fa-repeat"></i>Loop Visualizer</h2>
+
+      <div class="box">
+        <label for="arrayInput">Enter array values (space-separated):</label>
+        <input
+          id="arrayInput"
+          type="text"
+          value="apple banana cherry"
+          placeholder="Add Array"
+        />
+      </div>
+      <div class="box">
+        <button class="loop-button" onclick="runLoop('for')">For Loop</button>
+        <button class="loop-button" onclick="runLoop('forIn')">
+          For...in Loop
+        </button>
+        <button class="loop-button" onclick="runLoop('forOf')">
+          For...of Loop
+        </button>
+        <button class="loop-button" onclick="runLoop('forEach')">
+          forEach Loop
+        </button>
+        <button class="loop-button" onclick="runLoop('while')">
+          While Loop
+        </button>
+      </div>
+
+      <div id="output"></div>
+    </div>
+
+    <div class="section">
+      <h2><i class="fa-solid fa-user"></i>Student Info</h2>
+      <div id="student-info"></div>
+    </div>
+
+    <div class="section">
+      <h2><i class="fa-solid fa-lines-leaning"></i>Tips</h2>
+      <div class="box">
+        <button id="show-tips">Show All Tips</button>
+        <button id="start-tips">Start Tips Interval</button>
+        <button id="stop-tips">Stop Tips Interval</button>
+      </div>
+      <div id="tips-container"></div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

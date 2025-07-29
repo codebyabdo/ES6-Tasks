@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.title {
+  margin: 0 auto 20px;
+  color: #222;
+  font-weight: 700;
+  text-align: center;
+  width: 300px;
+  font-size: 30px;
+  padding: 20px 0 10px;
+  border-bottom: 1px solid #222;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: normal;
+  gap: 30px;
+  max-width: 900px;
+  border-radius: 8px;
+  padding: 30px 30px 50px;
+  margin: 50px auto;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #222;
+  font-weight: 700;
+  text-align: center;
+  font-size: 30px;
+}
+
+i {
+  color: #222;
+  padding-right: 5px;
+}
+
+.section .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.section input {
+  width: 250px;
+  border-radius: 8px;
+  outline: none;
+  padding: 10px;
+  border: 1px solid #e1e1e1;
+  transition: 0.3s;
+}
+
+.section input:focus {
+  border: 1px solid #258fcc;
+}
+
+.section .box label {
+  font-size: 20px;
+}
+
+.section .box #arrayInput {
+  width: 300px;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.section button {
+  background-color: #208ac7;
+  color: #fff;
+  width: 250px;
+  margin: 0 auto;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.section button:hover {
+  background-color: #207eb4;
+}
+
+#student-info {
+  font-size: 23px;
+  padding: 10px 0;
+  position: relative;
+}
+#student-info::before,
+#student-info::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: #1e1e1e;
+  color: #1e1e1e;
+  transition: 0.5s;
+}
+
+#student-info::after {
+  left: 50%;
+}
+#student-info::before {
+  right: 50%;
+}
+
+#student-info:hover::before,
+#student-info:hover::after {
+  width: 50%;
+}
+
+.section:nth-child(4) {
+  align-items: center;
+}
+
+#tips-container {
+  padding: 0 20px;
+  font-size: 20px;
+  max-height: 60vh;
+  overflow: auto;
+}
+
+#tips-container p {
+  padding: 10px 20px;
+  border: 1px solid #e1e1e1;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+#tips-container p:hover {
+  background-color: #f7f7f7;
+}
+
+#tips-container p::before {
+  content: "\2022";
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
+}
+
+#output {
+  font-size: 20px;
+  padding: 10px 20px;
+  max-height: 30vh;
+  overflow: auto;
+}
+
+.line {
+  font-size: 18px;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 10px;
+  transition: 0.3s;
+}
+.line:hover {
+  background-color: #f7f7f7;
+}
+.index {
+  color: #124563;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 5px;
+}
+.value {
+  color: #1e1e1e;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .section {
+    max-width: 350px;
+    gap: 10px;
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .section button {
+    font-size: 10px;
+    width: 45%;
+  }
+
+  .section input {
+    font-size: 10px;
+    width: 100px;
+  }
+
+  .section .box {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .section .box label {
+    font-size: 15px;
+  }
+  .section .box #arrayInput {
+    font-size: 12px;
+    width: 200px;
+    padding: 10px 20px;
+  }
+
+  #output {
+    padding: 10px;
+    max-height: 16vh;
+  }
+
+  .line {
+    font-size: 15px;
+    padding: 5px;
+  }
+
+  .index {
+    font-size: 15px;
+  }
+  .section .line i {
+    font-size: 15px;
+  }
+
+  #student-info {
+    font-size: 16px;
+    padding: 0;
+  }
+
+  #tips-container {
+    font-size: 16px;
+    padding: 0;
+    max-height: 40vh;
+  }
+
+  #tips-container p {
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+}
