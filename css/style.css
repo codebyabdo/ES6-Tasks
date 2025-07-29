@@ -180,6 +180,27 @@ i {
   color: #1e1e1e;
 }
 
+.footer {
+  position: relative;
+  bottom: 0;
+  background-color: #222;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+}
+
+.footer h1 {
+  font-size: 20px;
+}
+.footer h1 i {
+  color: red;
+}
+.footer h1 a {
+  color: var(--secondary-color);
+}
+
+
 @media (max-width: 768px) {
   .title {
     font-size: 24px;
@@ -250,5 +271,9 @@ i {
   #tips-container p {
     padding: 5px;
     margin-bottom: 5px;
+  }
+
+  .footer h1 {
+    font-size: 14px;
   }
 }
