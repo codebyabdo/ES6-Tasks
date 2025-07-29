@@ -5,7 +5,7 @@ const sumBtn = document.getElementById("sum");
 sumBtn.addEventListener("click", function () {
   const num1 = document.getElementById("num1").value;
   const num2 = document.getElementById("num2").value;
-  let sum = parseInt(num1) + parseInt(num2);
+  let sum = parseFloat(num1) + parseFloat(num2);
   !num1 || !num2 || alert(`Summing = ${sum}`);
 });
 
