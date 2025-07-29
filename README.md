@@ -21,7 +21,7 @@ This project is perfect for beginners and intermediate developers aiming to stre
 
 | Page one | page two |
 |-----------|------------------|
-| ![Home](./screenshot-1.png) | ![Projects](./screenshot-2.png) |
+| ![Home](./screenshot-2.png) | ![Projects](./screenshot-1.png) |
 
 
 ---
